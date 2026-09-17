@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula 1 - Pasión por la Velocidad</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #e10600 0%, #800300 100%);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        nav {
+            background-color: #1f1f1f;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e10600;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background-color: #1e1e1e;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            border-left: 5px solid #e10600;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #b0b0b0;
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background-color: #2a2a2a;
+            padding: 1.5rem;
+            border-radius: 6px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #e10600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Estilos para la galería de imágenes */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .image-box {
+            background-color: #2a2a2a;
+            border-radius: 6px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-box p {
+            padding: 1rem;
+            margin: 0;
+            color: #d0d0d0;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #0a0a0a;
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fórmula 1</h1>
+        <p>La máxima categoría del automovilismo mundial</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#que-es">¿Qué es la F1?</a>
+        <a href="#pilotos">Pilotos y Escuderías</a>
+        <a href="#galeria">Galería</a>
+    </nav>
+
+    <div class="container">
+        <section id="inicio">
+            <h2>Bienvenido al Gran Circo</h2>
+            <p>La Fórmula 1 (F1) es la competición de automovilismo internacional más popular y prestigiosa del mundo. Cada temporada reúne a los mejores pilotos y constructores compitiendo en circuitos icónicos alrededor del globo terráqueo a velocidades que superan los 300 km/h.</p>
+        </section>
+
+        <section id="que-es">
+            <h2>¿Qué hace única a la Fórmula 1?</h2>
+            <p>Los monoplazas de F1 son vehículos diseñados específicamente para estas competencias, utilizando tecnología punta en aerodinámica, ingeniería híbrida y ciencia de materiales. Las carreras, conocidas como Grandes Premios, se celebran en fines de semana que combinan sesiones de entrenamientos libres, clasificación y la emocionante carrera dominical.</p>
+        </section>
+
+        <section id="pilotos">
+            <h2>Elementos Clave</h2>
+            <div class="grid-cards">
+                <div class="card">
+                    <h3>Velocidad</h3>
+                    <p>Monoplazas capaces de acelerar de 0 a 100 km/h en menos de 2.5 segundos y soportar fuerzas G extremas en curvas.</p>
+                </div>
+                <div class="card">
+                    <h3>Escuderías</h3>
+                    <p>Equipos legendarios como Ferrari, McLaren, Mercedes y Red Bull compitiendo tanto por el Campeonato de Constructores como de Pilotos.</p>
+                </div>
+                <div class="card">
+                    <h3>Estrategia</h3>
+                    <p>Paradas en boxes milimétricas, elección de compuestos de neumáticos y gestión de combustible que definen la victoria.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de Monoplazas</h2>
+            <p>Imágenes representativas de la evolución y tecnología en la máxima categoría:</p>
+            <div class="image-gallery">
+                <div class="image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Red_Bull_RB18_Max_Verstappen_%2852157140411%29.jpg/640px-Red_Bull_RB18_Max_Verstappen_%2852157140411%29.jpg" alt="Monoplaza de F1 en pista">
+                    <p>Monoplaza de F1 en plena aceleración sobre el asfalto.</p>
+                </div>
+                <div class="image-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Formula_1_Car_-_Goodwood_Festival_of_Speed_2017_%2836263544772%29.jpg/640px-Formula_1_Car_-_Goodwood_Festival_of_Speed_2017_%2836263544772%29.jpg" alt="Exhibición de monoplaza clásico de F1">
+                    <p>Diseño aerodinámico y alerones de alta precisión tecnológica.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Página informativa de Fórmula 1. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
