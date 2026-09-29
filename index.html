@@ -3,223 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórmula 1 - Pasión por la Velocidad</title>
+    <title>CV | Franklin Sebastian Carrion Astudillo</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        bgDark: '#0B1121',
+                        cardDark: '#151C2C',
+                        cardBorder: '#232D42',
+                        textPrimary: '#F1F5F9',
+                        textSecondary: '#94A3B8',
+                        accent: '#06B6D4',
+                        accentHover: '#0891B2',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        /* Estilos generales */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, #e10600 0%, #800300 100%);
-            color: white;
-            text-align: center;
-            padding: 2.5rem 1rem;
-        }
-
-        header h1 {
-            font-size: 2.8rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            font-weight: 300;
-        }
-
-        nav {
-            background-color: #1f1f1f;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            padding: 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #e10600;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-        }
-
-        section {
-            background-color: #1e1e1e;
-            margin-bottom: 2rem;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            border-left: 5px solid #e10600;
-        }
-
-        h2 {
-            color: #ffffff;
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            color: #b0b0b0;
-        }
-
-        .grid-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .card {
-            background-color: #2a2a2a;
-            padding: 1.5rem;
-            border-radius: 6px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            color: #e10600;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Estilos para la galería de imágenes */
-        .image-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .image-box {
-            background-color: #2a2a2a;
-            border-radius: 6px;
-            overflow: hidden;
-            text-align: center;
-        }
-
-        .image-box img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .image-box p {
-            padding: 1rem;
-            margin: 0;
-            color: #d0d0d0;
-            font-size: 0.95rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            background-color: #0a0a0a;
-            color: #777;
-            font-size: 0.9rem;
-            margin-top: 3rem;
-        }
+        body { font-family: 'Inter', sans-serif; background-color: #0B1121; color: #F1F5F9; }
+        .glass-card { background-color: #151C2C; border: 1px solid #232D42; border-radius: 1.5rem; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
-<body>
+<body class="antialiased min-h-screen pb-12">
 
-    <header>
-        <h1>Fórmula 1</h1>
-        <p>La máxima categoría del automovilismo mundial</p>
-    </header>
-
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#que-es">¿Qué es la F1?</a>
-        <a href="#pilotos">Pilotos y Escuderías</a>
-        <a href="#galeria">Galería</a>
+    <!-- Navegación -->
+    <nav class="max-w-5xl mx-auto mt-6 px-4">
+        <div class="glass-card px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="text-accent font-bold tracking-wider text-xl">FS.DEV</div>
+            <div class="flex gap-6 text-sm font-medium text-textSecondary">
+                <a href="#perfil" class="hover:text-textPrimary transition flex items-center gap-2"><i class="fa-regular fa-user"></i> Perfil</a>
+                <a href="#experiencia" class="hover:text-textPrimary transition flex items-center gap-2"><i class="fa-solid fa-briefcase"></i> Experiencia</a>
+                <a href="#capacitaciones" class="hover:text-textPrimary transition flex items-center gap-2"><i class="fa-solid fa-award"></i> Capacitaciones</a>
+            </div>
+        </div>
     </nav>
 
-    <div class="container">
-        <section id="inicio">
-            <h2>Bienvenido al Gran Circo</h2>
-            <p>La Fórmula 1 (F1) es la competición de automovilismo internacional más popular y prestigiosa del mundo. Cada temporada reúne a los mejores pilotos y constructores compitiendo en circuitos icónicos alrededor del globo terráqueo a velocidades que superan los 300 km/h.</p>
+    <main class="max-w-5xl mx-auto px-4 mt-8 space-y-6">
+        
+        <!-- Header / Perfil Principal -->
+        <section class="glass-card p-6 md:p-10 flex flex-col md:flex-row items-center gap-8 relative overflow-hidden" id="perfil">
+            <!-- Efecto de brillo detrás de la foto -->
+            <div class="absolute top-1/2 left-12 transform -translate-y-1/2 w-32 h-32 bg-accent opacity-20 blur-3xl rounded-full"></div>
+            
+            <div class="relative w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden border-2 border-accent shrink-0 shadow-[0_0_15px_rgba(6,182,212,0.5)]">
+                <!-- Reemplazar src con el enlace a tu foto real si lo deseas -->
+                <img src="https://ui-avatars.com/api/?name=Franklin+Carrion&background=06B6D4&color=fff&size=256" alt="Franklin Carrion" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="text-center md:text-left z-10">
+                <span class="inline-block px-3 py-1 bg-cyan-900/40 text-accent border border-cyan-800 rounded-full text-xs font-semibold tracking-wide mb-3">HOJA DE VIDA DIGITAL</span>
+                <h1 class="text-3xl md:text-5xl font-bold mb-2">Franklin Sebastian Carrion Astudillo</h1>
+                <p class="text-textSecondary text-lg">Estudiante de Administración de Infraestructura y Plataformas Tecnológicas</p>
+            </div>
         </section>
 
-        <section id="que-es">
-            <h2>¿Qué hace única a la Fórmula 1?</h2>
-            <p>Los monoplazas de F1 son vehículos diseñados específicamente para estas competencias, utilizando tecnología punta en aerodinámica, ingeniería híbrida y ciencia de materiales. Las carreras, conocidas como Grandes Premios, se celebran en fines de semana que combinan sesiones de entrenamientos libres, clasificación y la emocionante carrera dominical.</p>
+        <!-- Grid de Datos y Formación -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Datos Personales -->
+            <section class="glass-card p-8">
+                <h2 class="text-xl font-bold mb-6 flex items-center gap-3"><i class="fa-regular fa-address-card text-accent"></i> Datos Personales</h2>
+                <div class="space-y-5">
+                    <div class="flex gap-4 items-start">
+                        <i class="fa-solid fa-fingerprint text-textSecondary mt-1"></i>
+                        <div>
+                            <p class="text-xs text-textSecondary mb-1">Cédula de Identidad</p>
+                            <p class="font-medium">0150321735</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <i class="fa-solid fa-location-dot text-textSecondary mt-1"></i>
+                        <div>
+                            <p class="text-xs text-textSecondary mb-1">Ubicación y Dirección</p>
+                            <p class="font-medium">Gabriela Mistral y Ciro Alegre<br>Cuenca, Ecuador</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <i class="fa-brands fa-whatsapp text-textSecondary mt-1"></i>
+                        <div>
+                            <p class="text-xs text-textSecondary mb-1">Teléfono / WhatsApp</p>
+                            <p class="font-medium">+593 0958892429</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <i class="fa-regular fa-envelope text-textSecondary mt-1"></i>
+                        <div>
+                            <p class="text-xs text-textSecondary mb-1">Correo Electrónico</p>
+                            <a href="mailto:Ayzaxbr@gmail.com" class="font-medium hover:text-accent transition">Ayzaxbr@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Columna Derecha (Formación e Idioma) -->
+            <div class="space-y-6 flex flex-col">
+                <!-- Formación Académica -->
+                <section class="glass-card p-8 flex-1">
+                    <h2 class="text-xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-graduation-cap text-accent"></i> Formación Académica</h2>
+                    
+                    <div class="relative border-l-2 border-cardBorder pl-5 space-y-6">
+                        <div class="relative">
+                            <div class="absolute -left-[27px] top-1 w-3 h-3 bg-accent rounded-full shadow-[0_0_8px_rgba(6,182,212,0.8)]"></div>
+                            <h3 class="font-bold text-md">Tecnología Superior en Infraestructura y Plataformas TI</h3>
+                            <p class="text-textSecondary text-sm mt-1">Cursando 3er Ciclo</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[27px] top-1 w-3 h-3 bg-cardBorder rounded-full"></div>
+                            <h3 class="font-bold text-md">Bachiller en Ciencias</h3>
+                            <p class="text-textSecondary text-sm mt-1">Unidad Educativa - Ciudad de Cuenca<br>Completado</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Dominio de Idioma -->
+                <section class="glass-card p-8">
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-xl font-bold flex items-center gap-3"><i class="fa-solid fa-language text-accent"></i> Dominio de Idioma</h2>
+                    </div>
+                    <div class="mt-4 flex justify-between items-center bg-[#1E293B] p-4 rounded-xl border border-cardBorder">
+                        <span class="font-bold">Inglés</span>
+                        <span class="px-3 py-1 bg-cyan-900/40 text-accent border border-cyan-800 rounded-full text-xs font-semibold">Nivel A2</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Documentación Oficial -->
+        <section class="glass-card p-6 md:p-8 flex flex-col sm:flex-row justify-between items-center gap-4 bg-gradient-to-r from-cardDark to-[#1a2336]">
+            <div>
+                <h2 class="text-xl font-bold flex items-center gap-3 mb-2"><i class="fa-brands fa-google-drive text-accent"></i> Documentación Oficial en Cloud Drive</h2>
+                <p class="text-textSecondary text-sm">Visualiza mi expediente académico y documentos personales en Google Drive.</p>
+            </div>
+            <a href="https://drive.google.com/drive/folders/17aTlYVqIvaBZ44Hdsue1lldSFElBCkL4?usp=sharing" target="_blank" class="shrink-0 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-medium rounded-xl transition shadow-lg flex items-center gap-2">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Abrir en Google Drive
+            </a>
         </section>
 
-        <section id="pilotos">
-            <h2>Elementos Clave</h2>
-            <div class="grid-cards">
-                <div class="card">
-                    <h3>Velocidad</h3>
-                    <p>Monoplazas capaces de acelerar de 0 a 100 km/h en menos de 2.5 segundos y soportar fuerzas G extremas en curvas.</p>
+        <!-- Experiencia y Proyectos (Trayectoria) -->
+        <section class="glass-card p-8" id="experiencia">
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-laptop-code text-accent"></i> Proyectos Técnicos y Experiencia</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Proyecto 1 -->
+                <div class="bg-[#1E293B] p-6 rounded-xl border border-cardBorder hover:border-accent transition duration-300">
+                    <span class="inline-block px-2 py-1 bg-slate-800 text-textSecondary rounded text-xs font-mono mb-3">Infraestructura y Redes</span>
+                    <h3 class="font-bold text-lg mb-2">Administración de Servidores y Redes LAN</h3>
+                    <p class="text-textSecondary text-sm mb-4">
+                        Diseño, configuración y despliegue de servidores utilizando entornos <strong>Linux</strong> y <strong>Windows Server</strong>. Implementación de servicios de correo electrónico corporativo y configuración de topologías de red para interconectar múltiples computadoras, garantizando comunicación segura y estable en trabajo colaborativo.
+                    </p>
                 </div>
-                <div class="card">
-                    <h3>Escuderías</h3>
-                    <p>Equipos legendarios como Ferrari, McLaren, Mercedes y Red Bull compitiendo tanto por el Campeonato de Constructores como de Pilotos.</p>
-                </div>
-                <div class="card">
-                    <h3>Estrategia</h3>
-                    <p>Paradas en boxes milimétricas, elección de compuestos de neumáticos y gestión de combustible que definen la victoria.</p>
+
+                <!-- Proyecto 2 -->
+                <div class="bg-[#1E293B] p-6 rounded-xl border border-cardBorder hover:border-accent transition duration-300">
+                    <span class="inline-block px-2 py-1 bg-slate-800 text-textSecondary rounded text-xs font-mono mb-3">Desarrollo y Bases de Datos</span>
+                    <h3 class="font-bold text-lg mb-2">Software de Gestión y Bases de Datos</h3>
+                    <p class="text-textSecondary text-sm mb-4">
+                        Desarrollo colaborativo de una aplicación programada orientada a negocios, diseñada para la inserción y gestión de registros de personas. Integración exitosa del software con una <strong>base de datos relacional</strong> creada desde cero para optimizar el flujo de información y almacenamiento del negocio.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section id="galeria">
-            <h2>Galería de Monoplazas</h2>
-            <p>Imágenes representativas de la evolución y tecnología en la máxima categoría:</p>
-            <div class="image-gallery">
-                <div class="image-box">
-                    <img src="./img/one.jpg" alt="Monoplaza de F1 en pista">
-                    <p>Monoplaza de F1 en plena aceleración sobre el asfalto.</p>
-                </div>
-                <div class="image-box">
-                    <img src="./img/two.jpg" alt="Exhibición de monoplaza clásico de F1">
-                    <p>Diseño aerodinámico y alerones de alta precisión tecnológica.</p>
+        <!-- Capacitaciones -->
+        <section class="glass-card p-8" id="capacitaciones">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold flex items-center gap-3"><i class="fa-solid fa-chalkboard-user text-accent"></i> Presentación de Capacitaciones</h2>
+            </div>
+            
+            <!-- Canva Embed -->
+            <div class="bg-black/20 rounded-xl p-2 border border-cardBorder">
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; overflow: hidden; border-radius: 8px; will-change: transform;">
+                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                        src="https://www.canva.com/design/DAHWlMLh7IM/bNbt82Uc3_ZzJqWzV4hPvA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                    </iframe>
                 </div>
             </div>
-        </section>
-    </div>
 
-    <footer>
-        <p>&copy; 2026 Página informativa de Fórmula 1. Todos los derechos reservados.</p>
+            <!-- Credly Link -->
+            <div class="mt-6 flex flex-col sm:flex-row justify-between items-center gap-4 bg-[#1E293B] p-5 rounded-xl border border-cardBorder">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-accent text-xl">
+                        <i class="fa-solid fa-shield-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Credenciales Verificadas en Credly</h3>
+                        <p class="text-sm text-textSecondary">Revisa mis insignias oficiales emitidas por academias certificadas.</p>
+                    </div>
+                </div>
+                <a href="https://www.credly.com/users/franklin-sebastian-carrion-astudillo" target="_blank" class="shrink-0 px-5 py-2.5 bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white font-medium rounded-lg transition flex items-center gap-2 text-sm">
+                    Ver perfil en Credly <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="max-w-5xl mx-auto px-4 mt-8 text-center text-textSecondary text-sm pb-8">
+        <p>&copy; 2024 Franklin Sebastian Carrion Astudillo. Todos los derechos reservados.</p>
     </footer>
 
 </body>
 </html>
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAHV7MdXES0/SKaamoYoCEhjuwSI2uc6ug/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHV7MdXES0&#x2F;SKaamoYoCEhjuwSI2uc6ug&#x2F;view?utm_content=DAHV7MdXES0&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Racing States of Matter Physical Science Presentation</a> de FRANKLIN SEBASTIAN CARRION ASTUDILLO
